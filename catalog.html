@@ -37,14 +37,15 @@
                   </ul>
                   
               </div>
-<!--Фильтр товаров это форма, размечен неправильно, переделать, когда будет информация-->
-      <!--<section>
+<!--Фильтр товаров-->
+      <section>
+        <h3 class="visually-hidden">Фильтр товаров</h3>
         <form action="#" method="get" oninput="priceoutput2.value=range.value">
               <fieldset>
                 <legend>стоимость</legend>
                   <label><input type="range" name="range" min="0" max="15000" value="15000" step="1000"></label><br>
                   <label>от<input name="priceoutput1" value="0"></label>
-                  <label>до<output name="priceoutput2" value="15000" >15000</output></label>
+                  <label>до<output name="priceoutput2">15000</output></label>
               </fieldset>
               <fieldset>
                 <legend>сетка</legend>
@@ -54,17 +55,17 @@
               </fieldset>
               <fieldset>
                 <legend>особенности</legend>
-                  <p><label><input type="checkbox" name="features" value="slider">Слайдер</legend></p>
-                  <p><label><input type="checkbox" name="features" value="Advantages">Блок преимуществ</legend></p>
-                  <p><label><input type="checkbox" name="features" value="news">Новости</legend></p>
-                  <p><label><input type="checkbox" name="features" value="gallery">Галерея</legend></p>
-                  <p><label><input type="checkbox" name="features" value="trash">Корзина</legend></p>
+                  <p><label><input type="checkbox" name="features" value="slider">Слайдер</label></p>
+                  <p><label><input type="checkbox" name="features" value="Advantages">Блок преимуществ</label></p>
+                  <p><label><input type="checkbox" name="features" value="news">Новости</label></p>
+                  <p><label><input type="checkbox" name="features" value="gallery">Галерея</label></p>
+                  <p><label><input type="checkbox" name="features" value="trash">Корзина</label></p>
               </fieldset>
             <p><input type="button" value="ПОКАЗАТЬ"></p>
         </form>
-      </section>-->
+      </section>
       <section>
-        <h2>Список готовых шаблонов</h2>
+        <h2 class="visually-hidden">Список готовых шаблонов</h2>
           <ul>
             <li>
               <div>
@@ -151,7 +152,7 @@
   <footer>
     <section>
 <!--Дальше будет карта-->
-        <h3>Карта</h3>
+        <h3 class="visually-hidden">Карта</h3>
         <img src="img/map1.png" width="1440" height="416" alt="Карта">
 <!--Дальше будет модальное окно для связи (согласно ТЗ)?-->
       <div>
@@ -160,6 +161,17 @@
         <p>тел.+7(812)275-75-75</p>
         <a href="#">Напишите нам</a>
       </div>
+      <div>
+     <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="name">Ваше имя</label><br>
+        <input type="text" id="name" name="name" placeholder="Имя Фамилия"><br>
+        <label for="e-mail">Ваш e-mail</label><br>
+        <input type="email" id="e-mail" name="e-mail" placeholder="e-mail@example.com"><br>
+        <label for="textarea">Текст письма</label><br>
+        <textarea id="textarea" name=" textarea" placeholder="В свободной форме" rows="5"></textarea><br>
+        <input type="submit" value="ОТПРАВИТЬ">
+      </form>
+    </div>
      </section>
 <!--Приглашение добавиться в социальных сетях-->
 		  <div>
