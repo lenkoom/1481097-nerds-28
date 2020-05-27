@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
-    <header>
+    <header class="navigation">
 <!--Навигация-->
       <nav>
         <a href="index.html">
@@ -20,19 +21,19 @@
         </ul>
         <a href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">Корзина</a>
       </nav>
+      <h1 class="navigation">Магазин готовых шаблонов</h1>
   	</header>
-    <main>
-      <h1>Магазин готовых шаблонов</h1>
+    <main>      
 <!--Сортировка-->
       <div>
-        <p>сортировать:</p> 
-          <ul>
+        <p class="sorting-item">сортировать:</p> 
+          <ul class="sorting">
             <li><a href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
             <li><a href="#">по названию</a></li>
           </ul>
 <!--Cтрелки для сортировки-->
-          <ul>
+          <ul class="sorting">
             <li><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="К меньшему"></a></li>
             <li><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="К большему"></a></li>
           </ul>
@@ -43,21 +44,23 @@
 <!--По стоимости-->
         <form action="https://echo.htmlacademy.ru/courses" method="post" oninput="priceoutput2.value=range.value">
           <fieldset>
-            <legend>стоимость</legend>
+            <legend class="sorting-item">стоимость</legend>
             <label><input type="range" name="range" min="0" max="15000" value="15000" step="1000"></label><br>
             <label>от<input name="priceoutput1" value="0"></label>
             <label>до<output name="priceoutput2">15000</output></label>
           </fieldset>
 <!--По сетке-->
           <fieldset>
-            <legend>сетка</legend>
-              <p><label><input type="radio" name="grid" value="adaptive">Адаптивная</label></p>
-              <p><label><input type="radio" name="grid" value="fixed">Фиксированная</label></p>
-              <p><label><input type="radio" name="grid" value="flexed">Резиновая</label></p>
+            <legend class="sorting-item">сетка</legend>
+              <p class="criteria">
+                <p><label><input type="radio" name="grid" value="adaptive">Адаптивная</label></p>
+                <p><label><input type="radio" name="grid" value="fixed">Фиксированная</label></p>
+                <p><label><input type="radio" name="grid" value="flexed">Резиновая</label></p>
+              </p>
           </fieldset>
 <!--По особенностям-->
           <fieldset>
-            <legend>особенности</legend>
+            <legend class="sorting-item">особенности</legend>
               <p><label><input type="checkbox" name="features" value="slider">Слайдер</label></p>
               <p><label><input type="checkbox" name="features" value="Advantages">Блок преимуществ</label></p>
               <p><label><input type="checkbox" name="features" value="news">Новости</label></p>
@@ -70,7 +73,7 @@
 <!--Список товаров-->
       <section>
         <p class="visually-hidden">Список готовых шаблонов</p>
-          <ul>
+          <ul class="products">
             <!--SEDONA-->
             <li>
               <div>
@@ -151,7 +154,7 @@
             </li>
           </ul>
 <!--Пагинация страниц-->
-          <ol>
+          <ol class="pages">
             <li><a>1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
@@ -167,18 +170,18 @@
 <!--Отсюда должно будет открываться модальное окно для связи (согласно ТЗ)?-->
       <div>
         <p><b>NЁRDS DESIGN STUDIO</b></p>
-        <p>191186,Санкт-Петербург,<br> ул.Большая Конюшенная, д.19/8 <br></p>
-        <p>тел.+7(812)275-75-75</p>
+        <p class="location-text">191186,Санкт-Петербург,<br> ул.Большая Конюшенная, д.19/8 <br></p>
+        <p class="location-text">тел.+7(812)275-75-75</p>
         <a href="#">Напишите нам</a>
       </div>      
      </section>
 <!--О социальных сетях-->
 		  <div>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <p class="friends-topic">Давайте дружить, это выгодно!</p>
+        <p class="friends-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
 <!--Социальные сети-->
-      <ul>
+      <ul class="social">
       <li>
         <a href="#"><img src="img/vk.svg" width="81" height="81" alt="Вконтакте"></a>
       </li>

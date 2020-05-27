@@ -1,0 +1,186 @@
+
+ 
+/* @font-face: { 
+font-family: "roboto";
+src: url("fonts/nerds/fonts/webroboto.woff2") format("woff2"),
+     url("fonts/nerds/fonts/webroboto.woff2") format("woff");
+font-weight:normal;
+font-style:normal;
+}
+*/
+
+:root {
+  --basic-gray: #EEEEEE;
+  --basic-red-light:#FB565A;
+  --basic-red:#E74246;
+  --basic-red-dark: #D7373B;
+  --basic-green-light: #00CA74;
+  --basic-green: #00BC6C;
+  --basic-green-dark: #00AA62;
+  --basic-yellow-light: #EFC84A;
+  --basic-yellow: #EAB534;
+  --basic-yellow-dark: #E5A722;
+  --basic-white: #ffffff;
+  --basic-gray-dark:#283136;
+  --basic-dark:#000000;
+  --basic-gray-light:#666666;
+}
+
+
+body {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+ }
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Навигация*/
+.navigation {
+background: #EEEEEE;
+
+}
+
+.navigation li {
+  list-style-type: none;
+  display: inline;
+  color:#000000;
+}
+
+.visually-hidden {
+position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.slide {
+background: #EEEEEE;
+}
+
+p.slide-topic  {
+font-size: 55px;
+
+}
+
+p.slide-text {
+color: #283136;
+
+}
+
+.services li {
+  list-style-type: none;
+  display: inline-block;
+}
+.services p {
+  color: #283136;
+}
+
+section.about {
+color: #283136;
+}
+
+p.about-topic  {
+font-size: 45px;
+color:#000000;
+}
+
+.progress th {
+font-size: 45px;
+font-weight: bold;
+}
+
+.progress th>span {
+font-size: 26px;
+vertical-align: top;
+}
+
+.partners li {
+list-style-type: none;
+display: inline;
+}
+
+p.location-topic {
+font-size: 18px;
+font-weight: bold;
+
+}
+p.location-text {
+color: #283136;
+}
+
+p.friends-topic {
+font-size: 36px;
+font-weight: bold;
+
+}
+p.friends-text {
+color: #283136;
+}
+
+.social li {
+list-style-type: none;
+display: inline;
+
+}
+
+h1 {
+font-size: 55px;
+
+}
+
+.sorting li {
+  list-style-type: none;
+  display: inline;
+  }
+
+legend.sorting-item {
+font-size: 18px;
+font-weight: bold;
+}
+
+p.sorting-item {
+font-size: 18px;
+font-weight: bold;
+}
+
+p label {
+color: #283136;
+
+}
+
+fieldset {
+   border:0 none;
+}
+
+ul>li>div>p {
+font-size: 16px;
+color:#666666;
+  }
+
+  ul>li>div>a>p {
+
+font-weight: bold;
+font-size: 18px;
+color:#000000;
+}
+
+.pages li {
+  list-style-type: none;
+  display: inline;
+
+  }
+
+.products li {
+  list-style-type: none;
+  display: inline;
+
+}
+
