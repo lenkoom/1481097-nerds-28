@@ -3,39 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
-    <header class="navigation">
+    <header class="header">
 <!--Навигация-->
-      <nav>
+      <nav class="navigation">
         <a href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
         </a>
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="navigation">
+          <li><a class="navigation--link" href="#">Студия</a></li>
+          <li><a class="navigation--link" href="#">Клиенты</a></li>
+          <li><a class="navigation--link" href="catalog.html">Магазин</a></li>
+          <li><a class="navigation--link" href="#">Контакты</a></li>
         </ul>
-        <a href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">Корзина</a>
+        <a class="trash" href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">Корзина</a>
       </nav>
-      <h1 class="navigation">Магазин готовых шаблонов</h1>
+      <h1 class="catalog-item">Магазин готовых шаблонов</h1>
   	</header>
     <main>      
 <!--Сортировка-->
       <div>
         <p class="sorting-item">сортировать:</p> 
-          <ul class="sorting">
-            <li><a href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по названию</a></li>
+          <ul >
+            <li class="sorting-list"><a class="sorting" href="#">по цене</a></li>
+            <li class="sorting-list"><a class="sorting" href="#">по типу</a></li>
+            <li class="sorting-list"><a class="sorting" href="#">по названию</a></li>
           </ul>
 <!--Cтрелки для сортировки-->
-          <ul class="sorting">
-            <li><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="К меньшему"></a></li>
-            <li><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="К большему"></a></li>
+          <ul>
+            <li class="sorting-list"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="К меньшему"></a></li>
+            <li class="sorting-list"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="К большему"></a></li>
           </ul>
       </div>
 <!--Фильтр товаров-->
@@ -67,7 +68,7 @@
               <p><label><input type="checkbox" name="features" value="gallery">Галерея</label></p>
               <p><label><input type="checkbox" name="features" value="trash">Корзина</label></p>
           </fieldset>
-            <button type="submit">ПОКАЗАТЬ</button>
+            <button type="submit" class="sorting-show">ПОКАЗАТЬ</button>
         </form>
       </section>
 <!--Список товаров-->
@@ -75,78 +76,78 @@
         <p class="visually-hidden">Список готовых шаблонов</p>
           <ul class="products">
             <!--SEDONA-->
-            <li>
-              <div>
+            <li class="products-list">
+              <div class="products-cart">
                 <a href="#">
-                 <p>«SEDONA»</p>
+                 <p class="products-name">«SEDONA»</p>
                 </a>
-                  <p>Информационный сайт для туристов</p>
-                <a href="#">9 900 РУБ.</a>
+                  <p class="products-description">Информационный сайт для туристов</p>
+                <a href="#" class="products-price">9 900 ₽</a>
               </div>
                 <p>
                   <img src="img/img-sedona1.jpg" width="360" height="580" alt="«Sedona» Информационный сайт для туристов">
                 </p>
             </li>
             <!--PINK-->
-            <li>
-              <div>
+            <li class="products-list">
+              <div class="products-cart">
                 <a href="#">
-                  <p>«PINK»</p>
+                  <p class="products-name">«PINK»</p>
                 </a>
-                  <p>Информационный сайт приложения для телефона</p>
-                <a href="#">0 РУБ.</a>
+                  <p class="products-description">Информационный сайт приложения для телефона</p>
+                <a href="#" class="products-price">9 900 ₽</a>
               </div>
                 <p>
                   <img src="img/img-pink1.jpg" width="360" height="580" alt="«PINK» Информационный сайт приложения для телефона">
                 </p>
             </li>
             <!--BORODINSKI-->
-            <li>
-              <div>
+            <li class="products-list">
+              <div class="products-cart">
                 <a href="#">
-                  <p>«BORODINSKI»</p>
+                  <p class="products-name">«BORODINSKI»</p>
                 </a>
-                  <p>Сайт barbershop</p>
-                <a href="#">0 РУБ.</a>
+                  <p class="products-description">Сайт barbershop</p>
+                <a href="#" class="products-price">9 900 ₽</a>
               </div>
                 <p>
                   <img src="img/img-barbershop1.jpg" width="360" height="580" alt="«BORODINSKI» Сайт barbershop">
                 </p>
             </li>
             <!--MISHKA-->
-            <li>
-              <div>
+            <li class="products-list">
+              <div class="products-cart">
                 <a href="#">
-                  <p>«MISHKA»</p>
+                  <p class="products-name">«MISHKA»</p>
                 </a>
-                  <p>Магазин товаров ручной работы для дома</p>             
-                <a href="#">0 РУБ.</a>
+                  <p class="products-description">Магазин товаров ручной работы для дома</p>             
+                <a href="#" class="products-price">9 900 ₽</a>
               </div>
                 <p>
                 <img src="img/img-mishka1.jpg" width="360" height="580" alt="«MISHKA»Магазин товаров ручной работы для дома">
                 </p>
             </li>
             <!--А+-->
-            <li>
-              <div>
+            <li class="products-list">
+              <div class="products-cart">
                 <a href="#">
-                  <p>«А+»</p>
+                  <p class="products-name">«А+»</p>
                 </a>
-                  <p>Сайт образовательных курсов</p>
-                <a href="#">0 РУБ.</a>
+                  <p class="products-description">Сайт образовательных курсов</p>
+                <a href="#" class="products-price">9 900 ₽</a>
               </div>
                 <p>
                 <img src="img/img-aplus1.jpg" width="360" height="580" alt="«А+» Сайт образовательных курсов">
                 </p>
             </li>
             <!--КВАСТ-->
-            <li>
-              <div>
+            <li class="products-list">
+              <div class="products-cart">
                 <a href="#">
-                  <p>«КВАСТ»</p>
+                  <p class="products-name">«КВАСТ»</p>
                 </a>
-                  <p>Информационный сайт крафтового кваса</p>
-                  <a href="#">0 РУБ.</a>
+                  <p class="products-description">Информационный сайт крафтового кваса</p>
+                  <a href="#" class="products-price">9 900 ₽</a>
               </div>
                 <p>
                 <img src="img/img-kvast1.jpg" width="360" height="580" alt="«КВАСТ» Информационный сайт крафтового кваса">
@@ -154,11 +155,11 @@
             </li>
           </ul>
 <!--Пагинация страниц-->
-          <ol class="pages">
-            <li><a>1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Следующая</a></li>
+          <ol >
+            <li class="pagination"><a>1</a></li>
+            <li class="pagination"><a href="#">2</a></li>
+            <li class="pagination"><a href="#">3</a></li>
+            <li class="pagination"><a class="pagination--next" href="#">Следующая</a></li>
           </ol>
       </section>
   </main>
@@ -172,7 +173,7 @@
         <p><b>NЁRDS DESIGN STUDIO</b></p>
         <p class="location-text">191186,Санкт-Петербург,<br> ул.Большая Конюшенная, д.19/8 <br></p>
         <p class="location-text">тел.+7(812)275-75-75</p>
-        <a href="#">Напишите нам</a>
+        <a class="contact" href="#">Напишите нам</a>
       </div>      
      </section>
 <!--О социальных сетях-->
@@ -181,15 +182,15 @@
         <p class="friends-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
 <!--Социальные сети-->
-      <ul class="social">
-      <li>
-        <a href="#"><img src="img/vk.svg" width="81" height="81" alt="Вконтакте"></a>
+      <ul>
+      <li class="social">
+        <a href="#"><img src="img/vk.svg" width="26" height="15" alt="Вконтакте"></a>
       </li>
-      <li>
-        <a href="#"><img src="img/fb.svg" width="81" height="81" alt="Фейсбук"></a>
+      <li class="social">
+        <a href="#"><img src="img/fb.svg" width="12" height="22" alt="Фейсбук"></a>
       </li>
-      <li>
-        <a href="#"><img src="img/inst.svg" width="81" height="81" alt="Инстаграм"></a>
+      <li class="social">
+        <a href="#"><img src="img/inst.svg" width="21" height="21" alt="Инстаграм"></a>
       </li>
     </ul>
     </footer>
