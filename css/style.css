@@ -1,20 +1,20 @@
 
  
-@font-face: { 
+@font-face { 
 font-family: "roboto";
 src: url("../fonts/roboto.woff2") format("woff2"),
      url("../fonts/roboto.woff") format("woff");
 font-weight: 400;
 font-style:normal;
 }
-@font-face: { 
+@font-face { 
 font-family: "roboto";
 src: url("../fonts/robotobold.woff2") format("woff2"),
      url("../fonts/robotobold.woff") format("woff");
 font-weight: 700;
 font-style:normal;
 }
-@font-face: { 
+@font-face { 
 font-family: "roboto";
 src: url("../fonts/robotomedium.woff2") format("woff2"),
      url("../fonts/robotomedium.woff") format("woff");
@@ -57,6 +57,11 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.nerds-logo:active {
+opacity:0.30;
+
 }
 
 .visually-hidden {
@@ -221,6 +226,18 @@ line-height: 45px;
 font-weight: 700;
 
 }
+.development-of{
+list-style-type: none;
+line-height: 24px;
+}
+
+.development-marker::before {
+content: url("../img/Rectangle10.svg");
+width: 25px;
+height: 2px;
+position: absolute;
+left: 1%;
+}
 
 .about-progress {
 font-weight: 700;
@@ -246,6 +263,16 @@ line-height: 18px;
 .partners {
 list-style-type: none;
 display: inline;
+}
+.partners-logo {
+opacity:0.2;
+}
+.partners-logo:hover {
+opacity:1;
+}
+
+.partners-logo:active {
+opacity:0.1;
 }
 
 .location-topic {
@@ -328,10 +355,16 @@ line-height: 55px;
   font-weight: 700;
   color:black;
    line-height: 30px;
+   text-transform: uppercase;
 }
 .criteria {
 line-height: 19px;
 font-size: 16px;
+}
+.sorting-criteria:active {
+color: rgba(0, 0, 0, 30%);
+
+
 }
 
 .sorting-show {
