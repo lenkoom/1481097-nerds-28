@@ -48,7 +48,7 @@ body {
   font-size: 16px;
   color:#283136;
   line-height: 24px;
- /* width: 1440px;*/
+ /*width: 1440px;*/
  }
 
  a {
@@ -84,17 +84,14 @@ img {
   margin-bottom: 0px;
 }
 
-.main {
-
-}
 /* Навигация*/
+
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items:flex-end;
   padding-left: 140px;
   padding-right: 140px;
-
 }
 
 .nerds-logo {
@@ -114,11 +111,10 @@ img {
   display: flex;
   justify-content: space-between;
   width: 440px;
-  margin-left: 65px;
+  margin-left: 0px;
   margin-bottom: 0px;
   margin-top: 0px;
-  margin-right: 0px;
-  line-height: 30px;
+  margin-right: 80px;
   padding-left: 0px;
   padding-top: 0px;
   padding-right: 0px;
@@ -156,11 +152,8 @@ img {
   color: rgba(0, 0, 0, 30%);
 }
 
-.basket-img {
-padding-bottom: 25px;
-}
-
 /*Слайды, карусель*/
+
 .slide {
  background: #EEEEEE;
  display: flex;
@@ -208,13 +201,19 @@ padding-bottom: 25px;
   color: rgba(250, 250, 250, 30%);
 }
 
+/*Услуги*/
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
 .services {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
-  padding-left: 140px;
-  padding-right: 200px;
+  margin-top: 62px;
+  padding-left: 0px;
+  padding-right: 58px;
 }
 
 .services-topic {
@@ -306,7 +305,7 @@ padding-bottom: 25px;
 .about {
   display: flex;
   justify-content: space-between;
-  padding-top: 140px;
+  padding-top: 120px;
   padding-left: 140px;
   padding-right: 140px;
 }
