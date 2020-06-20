@@ -10,91 +10,96 @@
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
     <header class="header">
 <!--Навигация-->
-      <nav class="navigation">
-        <a href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»" class="nerds-logo">
-        </a>
-        <ul class="navigation-menu">
-          <li><a class="navigation--link" href="#">Студия</a></li>
-          <li><a class="navigation--link" href="#">Клиенты</a></li>
-          <li><a class="navigation--link" href="catalog.html">Магазин</a></li>
-          <li><a class="navigation--link" href="#">Контакты</a></li>
-        </ul>
-        <a class="basket" href="#">Корзина</a>
-      </nav>
+      <div class="container">
+        <nav class="navigation">
+          <a href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»" class="nerds-logo">
+          </a>
+          <ul class="navigation-menu">
+            <li><a class="navigation--link" href="#">Студия</a></li>
+            <li><a class="navigation--link" href="#">Клиенты</a></li>
+            <li><a class="navigation--link" href="catalog.html">Магазин</a></li>
+            <li><a class="navigation--link" href="#">Контакты</a></li>
+          </ul>
+          <a class="basket" href="#">Корзина</a>
+        </nav>
+      </div>
       <h1 class="catalog-item">Магазин готовых шаблонов</h1>
   	</header>
     <main class="page-catalog">      
-
 <!--Фильтр товаров-->
-      <section class="sorting-form2">
-        <p class="visually-hidden">Фильтр товаров</p>
-<!--По стоимости-->
-        <form action="https://echo.htmlacademy.ru/courses" method="post" oninput="priceoutput2.value=range.value">
-          <fieldset class="sorting sorting--price">
-            <legend class="sorting-item">стоимость</legend>
-            <label><input type="range" name="range" min="0" max="15000" value="15000" step="1000"></label><br>
-            <label>от<input name="priceoutput1" value="0"></label>
-            <label>до<output name="priceoutput2">15000</output></label>
-          </fieldset>
-<!--По сетке-->
-          <fieldset class="sorting sorting--grid"> 
-            <legend class="sorting-item">сетка</legend>
-              <p>
-                <p><label class="sorting-criteria"><input type="radio" name="grid" value="adaptive">Адаптивная</label></p>
-                <p><label class="sorting-criteria"><input type="radio" name="grid" value="fixed">Фиксированная</label></p>
-                <p><label class="sorting-criteria"><input type="radio" name="grid" value="flexed">Резиновая</label></p>
-              </p>
-          </fieldset>
-<!--По особенностям-->
-          <fieldset class="sorting sorting--features">
-            <legend class="sorting-item">особенности</legend>
-              <p>
-                <label class="sorting-criteria">
-                  <input type="checkbox" name="features" value="slider">Слайдер
-                </label>
-              </p>
-              <p>
-                <label class="sorting-criteria">
-                  <input type="checkbox" name="features" value="Advantages">Блок преимуществ
-                </label>
-              </p>
-              <p>
-                <label class="sorting-criteria">
-                  <input type="checkbox" name="features" value="news">Новости
-                </label>
-              </p>
-              <p>
-                <label class="sorting-criteria">
-                  <input type="checkbox" name="features" value="gallery">Галерея
-                </label>
-              </p>
-              <p>
-                <label class="sorting-criteria">
-                  <input type="checkbox" name="features" value="trash">Корзина
-                </label>
-              </p>
-          </fieldset>
-            <button type="submit" class="sorting-show">ПОКАЗАТЬ</button>
-        </form>
-      </section>
+      <div class="container">
+        <section class="sorting-form2">
+          <p class="visually-hidden">Фильтр товаров</p>
+  <!--По стоимости-->
+          <form action="https://echo.htmlacademy.ru/courses" method="post" oninput="priceoutput2.value=range.value">
+            <fieldset class="sorting sorting--price">
+              <legend class="sorting-item">стоимость</legend>
+              <label><input type="range" name="range" min="0" max="15000" value="15000" step="1000"></label><br>
+              <label>от<input name="priceoutput1" value="0"></label>
+              <label>до<output name="priceoutput2">15000</output></label>
+            </fieldset>
+  <!--По сетке-->
+            <fieldset class="sorting sorting--grid"> 
+              <legend class="sorting-item">сетка</legend>
+                <div>
+                  <p><label class="sorting-criteria"><input type="radio" name="grid" value="adaptive">Адаптивная</label></p>
+                  <p><label class="sorting-criteria"><input type="radio" name="grid" value="fixed">Фиксированная</label></p>
+                  <p><label class="sorting-criteria"><input type="radio" name="grid" value="flexed">Резиновая</label></p>
+                </div>
+            </fieldset>
+  <!--По особенностям-->
+            <fieldset class="sorting sorting--features">
+              <legend class="sorting-item">особенности</legend>
+                <p>
+                  <label class="sorting-criteria">
+                    <input type="checkbox" name="features" value="slider">Слайдер
+                  </label>
+                </p>
+                <p>
+                  <label class="sorting-criteria">
+                    <input type="checkbox" name="features" value="Advantages">Блок преимуществ
+                  </label>
+                </p>
+                <p>
+                  <label class="sorting-criteria">
+                    <input type="checkbox" name="features" value="news">Новости
+                  </label>
+                </p>
+                <p>
+                  <label class="sorting-criteria">
+                    <input type="checkbox" name="features" value="gallery">Галерея
+                  </label>
+                </p>
+                <p>
+                  <label class="sorting-criteria">
+                    <input type="checkbox" name="features" value="trash">Корзина
+                  </label>
+                </p>
+            </fieldset>
+              <button type="submit" class="sorting-show">ПОКАЗАТЬ</button>
+          </form>
+        </section>
+      </div>
     <section>
 <!--Сортировка-->
-      <div class="sorting-form1">
-        <p class="sorting-item">сортировать:</p> 
-          <ul >
-            <li class="sorting-list"><a class="sorting" href="#">по цене</a></li>
-            <li class="sorting-list"><a class="sorting" href="#">по типу</a></li>
-            <li class="sorting-list"><a class="sorting" href="#">по названию</a></li>
-          </ul>
-<!--Cтрелки для сортировки-->
-          <ul>
-            <li class="sorting-list"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="К меньшему"></a></li>
-            <li class="sorting-list"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="К большему"></a></li>
-          </ul>
+      <div class="container">
+        <div class="sorting-form1">
+          <p class="sorting-item">сортировать:</p> 
+            <ul >
+              <li class="sorting-list"><a class="sorting" href="#">по цене</a></li>
+              <li class="sorting-list"><a class="sorting" href="#">по типу</a></li>
+              <li class="sorting-list"><a class="sorting" href="#">по названию</a></li>
+            </ul>
+  <!--Cтрелки для сортировки-->
+            <ul>
+              <li class="sorting-list"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="К меньшему"></a></li>
+              <li class="sorting-list"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="К большему"></a></li>
+            </ul>
+        </div>
       </div>
 <!--Список товаров-->
-      <section>
+      <div class="container">
         <p class="visually-hidden">Список готовых шаблонов</p>
           <ul class="products">
             <!--SEDONA-->
@@ -176,7 +181,7 @@
                 </p>
             </li>
           </ul>
-      </section>
+      </div>
 <!--Пагинация страниц-->
           <ol >
             <li class="pagination"><a>1</a></li>
@@ -188,9 +193,8 @@
     
   </main>
   <footer>
-    <section class="location-contact">
+      <section class="location-contact">
 <!--Карта-->
-        <h3 class="visually-hidden">Карта, как добраться до веб-студии NЁRDS</h3>
             <div class="location-map">
               <img src="img/map1.png" width="1440" height="416" alt="Карта с местоположением веб-студии NЁRDS">
             </div>
@@ -201,25 +205,26 @@
               <p class="location">тел.+7(812)275-75-75</p>
               <a class="contact" href="#">Напишите нам</a>
            </div>
-      
         </section>
 <!--Социальные сети-->
-      <div class="about-social">
-          <ul>
-              <li class="social">
-                <a href="#"><img  src="img/vk.svg" width="26" height="15" alt="Вконтакте"></a>
-              </li>
-              <li class="social">
-                <a href="#"><img src="img/fb.svg" width="12" height="22" alt="Фейсбук"></a>
-              </li>
-              <li class="social">
-                <a href="#"><img src="img/inst.svg" width="21" height="21" alt="Инстаграм"></a>
-              </li>
-          </ul>
-<!--О социальных сетях-->
-          <div>
-            <p class="friends-topic">Давайте дружить, это выгодно!</p>
-            <p class="friends-description">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="container">
+        <div class="about-social">
+            <ul>
+                <li class="social">
+                  <a href="#"><img  src="img/vk.svg" width="26" height="15" alt="Вконтакте"></a>
+                </li>
+                <li class="social">
+                  <a href="#"><img src="img/fb.svg" width="12" height="22" alt="Фейсбук"></a>
+                </li>
+                <li class="social">
+                  <a href="#"><img src="img/inst.svg" width="21" height="21" alt="Инстаграм"></a>
+                </li>
+            </ul>
+  <!--О социальных сетях-->
+            <div>
+              <p class="friends-topic">Давайте дружить, это выгодно!</p>
+              <p class="friends-description">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
           </div>
         </div>
       </footer>

@@ -41,14 +41,13 @@ font-style:normal;
   --basic-gray-light-social:#E1E1E1;
 }
 
-
 body {
   font-family: "roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color:#283136;
   line-height: 24px;
- /*width: 1440px;*/
+  /*width: 1440px;*/
  }
 
  a {
@@ -78,6 +77,19 @@ img {
   height: 1px;
   margin: -1px;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+*,
+*::before, 
+*::after { 
+box-sizing: border-box; 
+}
+
 .header {
   background: #EEEEEE;
   padding-top: 50px;
@@ -90,8 +102,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items:flex-end;
-  padding-left: 140px;
-  padding-right: 140px;
+
 }
 
 .nerds-logo {
@@ -154,21 +165,18 @@ img {
 
 /*Слайды, карусель*/
 
-.slide {
+.slider {
  background: #EEEEEE;
- display: flex;
- justify-content: flex-start;
- padding-left: 140px;
- padding-top: 0px;
- margin-top: 0px;
 }
 
-.slide-image {
- order: 2;
+.slide {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 .slide-description {
- order: 1;
  padding-right: 0px;
 }
 
@@ -183,7 +191,8 @@ img {
   color: #283136;
 }
 
-.slidebutton {
+.slide-button {
+  display: inline-block;
   background-color: #FB565A;
   color: white;
   padding: 15px 72px;
@@ -192,21 +201,16 @@ img {
   line-height: 18px;
 }
 
-.slidebutton:hover {
+.slide-button:hover {
   background-color: #E74246;
 }
 
-.slidebutton:active {
+.slide-button:active {
   background-color: #D7373B;
   color: rgba(250, 250, 250, 30%);
 }
 
 /*Услуги*/
-.container {
-  margin: 0 auto;
-  max-width: 1160px;
-}
-
 .services {
   list-style-type: none;
   display: flex;
@@ -223,14 +227,13 @@ img {
 }
 
 .services-btn1 {
+  display: inline-block;
   background-color: #FB565A;
   color: white;
   padding: 15px 48px;
   text-decoration: none;
   text-transform: uppercase;
-  line-height: 18px;
-  width: 60px;
-  height: 50px;
+  text-align: center;
 }
 
 .services-btn1:hover {
@@ -242,6 +245,7 @@ img {
   color: rgba(250, 250, 250, 30%);
 }
 .services-btn2 {
+  display: inline-block;
   background-color: #00CA74;
   color: white;
   padding: 15px 48px;
@@ -259,14 +263,13 @@ img {
   color: rgba(250, 250, 250, 30%);
 }
 .services-btn3 {
+  display: inline-block;
   background-color: #EFC84A;
   color: white;
   padding: 15px 48px;
   text-decoration: none;
   text-transform: uppercase;
-  line-height: 18px;
-  width: 60px;
-  height: 50px;
+  text-align: center;
 }
 
 .services-btn3:hover {
@@ -277,23 +280,29 @@ img {
   background-color: #E5A722;
   color: rgba(250, 250, 250, 30%);
 }
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
 
 .about-topic  {
   font-size: 45px;
   color:#000000;
   font-weight: 600;
   line-height: 45px;
+  margin-bottom:30px;
 }
 
 .about-orders {
   font-weight: 700;
-
 }
+
 .development-of{
   list-style-type: none;
   line-height: 24px;
 }
-/*
+ 
 .development-marker::before {
   content: url("../img/Rectangle10.svg");
   width: 25px;
@@ -301,21 +310,11 @@ img {
   position: absolute;
   left: 1%;
 }
-*/
-.about {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 120px;
-  padding-left: 140px;
-  padding-right: 140px;
-}
-
 
 .about-visually {
   display: flex;
   flex-direction: column;
   align-items:center;
-
 }
 
 .about-progress {
@@ -340,12 +339,12 @@ img {
   line-height: 18px;
 }
 
+/* ПАРТНЕРЫ*/
+
 .partners-list {
   display: flex;
   justify-content: space-around;
   padding-top: 140px;
-  padding-left: 140px;
-  padding-right: 140px;
 }
 
 .partners {
@@ -364,26 +363,22 @@ img {
   opacity:0.1;
 }
 
+/* КАРТА*/
+
 .location-contact {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, auto);
-  width: 100%;
-  height: 416px;
+  display: flex;
   padding-top: 140px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .location-card {
-  grid-column: 2 / -6;
-  grid-row: 2 / -2;
-  z-index: 2;
   background-color: white; 
-  width: 269px;
-  height: 283px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 40px;
-  text-align: center;
+  width: 319px; 
+  padding: 45px; 
+  text-align: left;
+  position: absolute;
+  margin: 40px 140px ;
 }
 
 .location-topic {
@@ -392,15 +387,30 @@ img {
   color:#000000;
   line-height: 30px;
 }
+
 .location-map {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  z-index: 1;
+ width: 100%;
+ min-height: 416px;
+ margin: 0px;
+ padding: 0px;
 }
 
 .location {
   line-height: 18px;
 }
+
+.contact {
+  display: inline-block;
+  background-color: #FB565A;
+  color: white;
+  padding: 15px 45px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px;
+}
+
+/* СОЦ.СЕТИ*/
 
 .about-social {
   display: flex;
@@ -454,6 +464,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-content: start;
+  justify-self:center;
 }
 
 .catalog-item {
@@ -463,7 +474,8 @@ img {
   line-height: 55px;
   padding-top: 30px;
   padding-bottom: 80px;
-  margin-left: 350px;
+  
+  text-align: center;
 }
 
 .sorting {
@@ -481,7 +493,7 @@ img {
 
 }
 .sorting-form2 {
-  margin-left: 140px;
+  
   margin-top: 50px;
 }
 
@@ -550,7 +562,6 @@ img {
   list-style-type: none;
 }
 
-
 .products-cart {
   background: #EEEEEE;
   display: block;
@@ -574,6 +585,7 @@ img {
   background-color: #D7373B;
   color: rgba(250, 250, 250, 30%);
 }
+
 .products-name {
   color: black;
   text-decoration: none;
@@ -630,7 +642,6 @@ background: #DFDFDF;
 
 .pagination--next:hover{
 background: #DFDFDF;
-
 }
 
 .pagination--next:active{
@@ -638,11 +649,3 @@ background: #DFDFDF;
   color: rgba(0, 0, 0, 30%);
 }
 
-.contact {
-  background-color: #FB565A;
-  color: white;
-  padding: 15px 60px;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 18px;
-}
