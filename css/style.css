@@ -139,6 +139,7 @@ box-sizing: border-box;
   padding-right: 0px;
   padding-bottom: 0px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .navigation-menu:nth-child(2n) {
@@ -188,7 +189,6 @@ box-sizing: border-box;
   background-position: center center;
 }
 
-
 /*СЛАЙДЫ*/
 
 .slider {
@@ -221,6 +221,7 @@ box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
 }
+
 .slider-controls label::after {
   content: "";
   position: absolute;
@@ -584,6 +585,10 @@ box-sizing: border-box;
 }
 
 /* КАРТА*/
+
+.location-map iframe {
+  border: none;
+}
 
 .location-contact {
   display: flex;
