@@ -48,7 +48,7 @@ body {
   font-size: 16px;
   color:#283136;
   line-height: 24px;
-  /*width: 1440px;*/
+ /* width: 1440px;*/
  }
 
  a {
@@ -315,6 +315,7 @@ box-sizing: border-box;
   line-height: 18px;
   margin-top: 40px;
   border-radius: 3px;
+  vertical-align:center;
 }
 
 .slide-button:hover {
@@ -356,6 +357,7 @@ box-sizing: border-box;
   text-align: center;
   margin-top: 15px;
   border-radius: 3px;
+  vertical-align:center;
 }
 
 .services-btn1:hover {
@@ -377,6 +379,7 @@ box-sizing: border-box;
   text-align: center;
   margin-top: 15px;
   border-radius: 3px;
+  vertical-align:center;
 }
 
 .services-btn2:hover {
@@ -397,6 +400,7 @@ box-sizing: border-box;
   text-align: center;
   margin-top: 15px;
   border-radius: 3px;
+  vertical-align:center;
 }
 
 .services-btn3:hover {
@@ -444,7 +448,7 @@ box-sizing: border-box;
 .development-marker::before {
   content: "";
   position: absolute;
-  background-image: url("../img/Rectangle10.svg");
+  background-image: url("../img/rectangle10.svg");
   background-repeat: no-repeat;
   background-position: center center;
   width: 25px;
@@ -531,7 +535,7 @@ box-sizing: border-box;
 }
 
 .partners {
-  background-image: url("../img/Rectangle13.png");
+  background-image: url("../img/rectangle13.png");
   background-repeat: no-repeat no-repeat;
   background-position: right, 0 0;
 }
@@ -633,11 +637,14 @@ box-sizing: border-box;
 .location {
   line-height: 18px;
   padding-top: 5px;
+  color: #666666;
 }
 
 .location-tel {
   line-height: 18px;
   padding-top: 3px;
+  text-decoration: none;
+  color: #666666;
 }
 
 .contact {
@@ -648,9 +655,10 @@ box-sizing: border-box;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 35px;
   border-radius: 3px;
   font-size: 16px;
+  vertical-align:center;
 }
 
 .map-marker {
@@ -1476,6 +1484,7 @@ top:87px;
   text-align: center;
   margin-top: 15px;
   border-radius: 3px;
+  vertical-align:center;
 }
 
 .modal-btn:hover {
