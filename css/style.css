@@ -448,7 +448,7 @@ box-sizing: border-box;
 .development-marker::before {
   content: "";
   position: absolute;
-  background-image: url("../img/rectangle10.svg");
+  background-image: url("../img/rectangle1.svg");
   background-repeat: no-repeat;
   background-position: center center;
   width: 25px;
@@ -535,7 +535,7 @@ box-sizing: border-box;
 }
 
 .partners {
-  background-image: url("../img/rectangle13.png");
+  background-image: url("../img/rectangle2.png");
   background-repeat: no-repeat no-repeat;
   background-position: right, 0 0;
 }
