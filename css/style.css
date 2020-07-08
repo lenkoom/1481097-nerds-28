@@ -48,7 +48,7 @@ body {
   font-size: 16px;
   color:#283136;
   line-height: 24px;
- width: 1440px;
+  width: 1440px;
  }
 
  a {
@@ -129,22 +129,26 @@ box-sizing: border-box;
   text-transform: uppercase;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  width: 440px;
-  margin-left: 0px;
-  margin-bottom: 0px;
+  justify-content: space-around;
+  width: 500px;
+  margin-left: 5px;
+  margin-bottom: 20px;
   margin-top: 0px;
-  margin-right: 80px;
+  margin-right: 95px;
   padding-left: 0px;
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
-  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
 .navigation-menu:nth-child(2n) {
   margin-left: -4px;
+  padding-left: 15px;
+}
+.navigation-menu:nth-child(1) {
+  margin-left: 20px;
+  padding-left: 10px;
 }
 
 .navigation--link {
@@ -291,19 +295,24 @@ box-sizing: border-box;
   margin-bottom: 0px;
   margin-top: 25px;
   color: #283136;
+  width: 450px;
 }
 
 .slide-button {
   display: inline-block;
   background-color: #FB565A;
   color: white;
-  padding: 15px 55px;
+  padding: 16px 0px;
+  padding-left: 55px;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 18px;
   margin-top: 40px;
   border-radius: 3px;
   vertical-align:middle;
+  width: 240px;
+  height: 50px;
+  margin-bottom: 80px;
 }
 
 .slide-button:hover {
@@ -329,7 +338,7 @@ box-sizing: border-box;
 #product-1:checked ~ .slider-controls label[for="product-1"]::before,
 #product-2:checked ~ .slider-controls label[for="product-2"]::before,
 #product-3:checked ~ .slider-controls label[for="product-3"]::before {
-    content: "";
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -351,6 +360,12 @@ box-sizing: border-box;
   padding-left: 0px;
   padding-right: 60px;
   margin-bottom: 0px;
+  flex-wrap: wrap;
+}
+
+.services li {
+  max-width: 300px;
+  margin-bottom: 10px;
 }
 
 .services-topic {
@@ -431,7 +446,7 @@ box-sizing: border-box;
 .about {
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 70px;
   padding-top: 20px;
   border-top: 2px double #EEEEEE; 
 }
@@ -506,6 +521,7 @@ box-sizing: border-box;
   justify-content: space-between;
   padding-left: 5px;
   padding-right: 7px;
+  flex-wrap: wrap;
 }
 
 .progress .progress-item {
@@ -545,19 +561,27 @@ box-sizing: border-box;
 
 .partners-list {
   display: flex;
+  align-items: center;
   list-style: none;
+  padding: 46px 0 44px 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -16px;
+  margin-right: -16px;
+  flex-wrap: wrap;
+  }
+
+.partners-wrap {
   border-top: 2px solid #EEEEEE;
   border-bottom: 2px solid #EEEEEE;
-  padding: 0;
-  margin-top: 45px;
-  margin-bottom: 0px;
-
+  margin-top: 47px;
 }
 
 .partners {
   background-image: url("../img/rectangle2.png");
   background-repeat: no-repeat no-repeat;
   background-position: right, 0 0;
+  width: 25%;
 }
 
 .partners a {
@@ -565,37 +589,11 @@ box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 20px;
-  margin-right: 20px;
-}
-
-.partners:nth-last-child(1) {
-  background-image: none;
 }
 
 .partners:nth-child(1) a {
   padding-left: 0;
   padding-top: 10px;
-  width: 260px;
-  height: 180px;
-}
-
-.partners:nth-child(2) a {
-  padding-bottom: 1px;
-  width: 280px;
-  height: 180px;
-}
-
-.partners:nth-child(3) a {
-  width: 280px;
-  height: 180px;
-}
-
-.partners:nth-child(4) a {
-  background-image: none;
-  padding-top: 5px;
-  width: 280px;
-  height: 180px;
 }
 
 .partners-logo {
@@ -614,18 +612,21 @@ box-sizing: border-box;
 
 /* КАРТА*/
 
-.location-map iframe {
+.location-contact iframe {
   border: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 .location-contact {
-  display: flex;
-  padding-top: 140px;
-  margin: 0 auto;
-  max-width: 1440px;
-  margin-top: 80px;
-  padding-top: 0;
+  padding-top: 54px;
   position: relative;
+  padding-bottom: 54px;
+  margin-top: 80px;
+  margin-bottom: 8px;
 }
 
 .location-card {
@@ -635,8 +636,8 @@ box-sizing: border-box;
   padding-bottom: 45px;
   padding-left: 50px;
   text-align: left;
-  position: absolute;
-  margin-top: 55px;
+  z-index: 2;
+  position: relative;
   margin-left: 140px;
 }
 
@@ -649,10 +650,16 @@ box-sizing: border-box;
 }
 
 .location-map {
+ position: absolute;
+ top:0;
+ left: 0;
  width: 100%;
- min-height: 416px;
- margin: 0px;
- padding: 0px;
+ height: 100%;
+ z-index:-1;
+}
+
+.location-map img {
+ display: block;
 }
 
 .location {
@@ -672,14 +679,17 @@ box-sizing: border-box;
   display: inline-block;
   background-color: #FB565A;
   color: white;
-  padding: 13px 45px;
+  padding: 13px 44px;
+  padding-bottom: 10px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 35px;
+  margin-top: 34px;
   border-radius: 3px;
   font-size: 16px;
   vertical-align:middle;
+  width: 219px;
+  height: 50px;
 }
 
 .contact:hover {
@@ -689,13 +699,6 @@ box-sizing: border-box;
 .contact:active {
   background-color: #D7373B;
   color: rgba(250, 250, 250, 30%);
-}
-
-.map-marker {
-  position: absolute;
-  display: flex;
-  left:821px;
-  top:87px;
 }
 
 /* СОЦ.СЕТИ*/
@@ -1117,6 +1120,10 @@ box-sizing: border-box;
 .sort-updown .sort-up:active,
 .sort-updown .sort-down:active {
   opacity: 1;
+}
+
+.sort-list {
+  max-width: 550px;
 }
 
 .sort-list li {
