@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize-min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-min.css">
   </head>
   <body class="page-body">
     <header class="header">
-<!--НАВИГАЦИЯ-->
+      <!--НАВИГАЦИЯ-->
       <div class="container">
         <nav class="navigation">
           <a href="index.html">
-            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»" class="nerds-logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»" class="nerds-logo">
           </a>
           <ul class="navigation-menu">
             <li><a class="navigation--link" href="#">Студия</a></li>
@@ -24,11 +24,11 @@
         </nav>
       </div>
       <h1 class="catalog-item">Магазин готовых шаблонов</h1>
-  	</header>
+    </header>
     <main class="container page-catalog">
-<!--ФИЛЬТР ТОВАРОВ-->
+      <!--ФИЛЬТР ТОВАРОВ-->
       <section class="sorting-form">
-<!--ПО СТОИМОСТИ -->
+        <!--ПО СТОИМОСТИ -->
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="sorting-item">
             <legend>Стоимость:</legend>
@@ -46,7 +46,7 @@
               </div>
             </div>
           </fieldset>
-<!--ПО СЕТКЕ-->
+          <!--ПО СЕТКЕ-->
           <fieldset class="grid-block">
             <legend>Сетка:</legend>
             <ul>
@@ -64,9 +64,9 @@
               </li>
             </ul>
           </fieldset>
-<!--ПО ОСОБЕННОСТЯМ-->
+          <!--ПО ОСОБЕННОСТЯМ-->
           <fieldset class="feat-block">
-          <legend>Особенности:</legend>
+            <legend>Особенности:</legend>
             <ul>
               <li class="filter-option">
                 <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="slider-check" checked>
@@ -74,23 +74,26 @@
               </li>
               <li class="filter-option">
                 <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantage" id="advantage-check">
-                <label for="advantage-check">Блок преимуществ</label></li>
+                <label for="advantage-check">Блок преимуществ</label>
+              </li>
               <li class="filter-option">
                 <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="news-check" checked>
                 <label for="news-check">Новости</label>
               </li>
               <li class="filter-option">
                 <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="gal-check">
-                <label for="gal-check">Галерея</label></li>
+                <label for="gal-check">Галерея</label>
+              </li>
               <li class="filter-option">
                 <input class="filter-input-checkbox visually-hidden" type="checkbox" name="cart" id="cart-check">
-                <label for="cart-check">Корзина</label></li>
+                <label for="cart-check">Корзина</label>
+              </li>
             </ul>
           </fieldset>
           <button type="submit" class="sorting-show">Показать</button>
         </form>
       </section>
-<!--СОРТИРОВКА ТОВАРОВ-->
+      <!--СОРТИРОВКА ТОВАРОВ-->
       <section class="catalog">
         <div class="catalog-header">
           <h2>Сортировать:</h2>
@@ -109,23 +112,25 @@
             <ul class="sort-updown">
               <li>
                 <a href="#" aria-label="Сортировать по убыванию" class="sort-down active-link">
-                  <span class="visually-hidden">Сортировать по убыванию</span>
+                <span class="visually-hidden">Сортировать по убыванию</span>
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="Сортировать по возрастанию" class="sort-up">
-                  <span class="visually-hidden">Сортировать по возрастанию</span>
+                <span class="visually-hidden">Сортировать по возрастанию</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
-<!--СПИСОК ТОВАРОВ-->
+        <!--СПИСОК ТОВАРОВ-->
         <ul class="products-list">
           <li class="product-item">
             <img src="img/img-sedona1.jpg" width="360" height="576" alt="Готовый шаблон сайта Sedona">
             <div class="product-about">
-              <a href="#"><h2>Sedona</h2></a>
+              <a href="#">
+                <h2>Sedona</h2>
+              </a>
               <p>Информационный сайт <span>для туристов</span></p>
               <a href="#" class="products-price" aria-label="Положить в корзину шаблон Sedona за ">9 900 ₽</a>
             </div>
@@ -133,7 +138,9 @@
           <li class="product-item">
             <img src="img/img-pink1.jpg" width="360" height="576" alt="Готовый шаблон сайта Pink">
             <div class="product-about">
-              <a href="#"><h2>Pink app</h2></a>
+              <a href="#">
+                <h2>Pink app</h2>
+              </a>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
               <a href="#" class="products-price" aria-label="Положить в корзину шаблон Pink за ">9 900 ₽</a>
             </div>
@@ -141,7 +148,9 @@
           <li class="product-item">
             <img src="img/img-barbershop1.jpg" width="360" height="576" alt="Готовый шаблон сайта Borodinski">
             <div class="product-about">
-              <a href="#"><h2>Barbershop</h2></a>
+              <a href="#">
+                <h2>Barbershop</h2>
+              </a>
               <p>Сайт салона красоты. <span>Для мужчин, да.</span></p>
               <a href="#" class="products-price" aria-label="Положить в корзину шаблон для Barbershop за">9 900 ₽.</a>
             </div>
@@ -149,7 +158,9 @@
           <li class="product-item">
             <img src="img/img-mishka1.jpg" width="360" height="576" alt="Готовый шаблон сайта Mishka">
             <div class="product-about">
-              <a href="#"><h2>Mishka</h2></a>
+              <a href="#">
+                <h2>Mishka</h2>
+              </a>
               <p>Интернет-магазин <span>вязаных игрушек</span></p>
               <a href="#" class="products-price" aria-label="Положить в корзину шаблон Mishka за">9 900 ₽</a>
             </div>
@@ -157,7 +168,9 @@
           <li class="product-item">
             <img src="img/img-aplus1.jpg" width="360" height="576" alt="Готовый шаблон сайта Study">
             <div class="product-about">
-              <a href="#"><h2>A Plus</h2></a>
+              <a href="#">
+                <h2>A Plus</h2>
+              </a>
               <p>Лендинг курсов повышения квалификации</p>
               <a href="#" class="products-price" aria-label="Положить в корзину шаблон A+ за ">9 900 ₽</a>
             </div>
@@ -165,13 +178,15 @@
           <li class="product-item">
             <img src="img/img-kvast1.jpg" width="360" height="576" alt="Готовый шаблон сайта Kvast">
             <div class="product-about">
-              <a href="#"><h2>KBACT</h2></a>
+              <a href="#">
+                <h2>KBACT</h2>
+              </a>
               <p>Промо-сайт производителя крафтового кваса</p>
               <a href="#" class="products-price" aria-label="Положить в корзину шаблон сайта Kvast за ">9 900 ₽</a>
             </div>
           </li>
         </ul>
-<!--ПАГИНАЦИЯ-->
+        <!--ПАГИНАЦИЯ-->
         <ol class="pagination">
           <li class="pagination-page"><a class="page-active">1</a></li>
           <li class="pagination-page"><a href="">2</a></li>
@@ -182,50 +197,50 @@
     </main>
     <footer>
       <section class="location-contact">
-<!--КАРТА-->
+        <!--КАРТА-->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1440" height="416" allowfullscreen title="Офис веб-студии NЁRDS по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
         <div class="location-map">
           <img src="img/map1.png" width="1440" height="416" alt="Карта с местоположением веб-студии NЁRDS">           
-          </div>
-<!--КАК ДОБРАТЬСЯ-->
-          <div class="location-card">
-              <p class="location-topic"><b>NЁRDS design studio</b></p>
-              <p class="location">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 <br></p>
-              <a href="tel:+78122757575" class="location-tel" aria-label="Позвонить нам по телефону">тел. +7 (812) 275-75-75</a>
-              <a class="contact" href="#">Напишите нам</a>
-          </div>
+        </div>
+        <!--КАК ДОБРАТЬСЯ-->
+        <div class="location-card">
+          <p class="location-topic"><b>NЁRDS design studio</b></p>
+          <p class="location">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 <br></p>
+          <a href="tel:+78122757575" class="location-tel" aria-label="Позвонить нам по телефону">тел. +7 (812) 275-75-75</a>
+          <a class="contact" href="#">Напишите нам</a>
+        </div>
       </section>
-<!--СОЦИАЛЬНЫЕ СЕТИ-->
+      <!--СОЦИАЛЬНЫЕ СЕТИ-->
       <section class="about-social">
-        <div class="container">             
+        <div class="container">
           <div class="footer-social">
             <ul class="social">
               <li class="social-icons">
                 <a href="https://vk.com/" class="vk">
-                  <span class="visually-hidden">Nerds в контакте</span>
+                <span class="visually-hidden">Nerds в контакте</span>
                 </a>
               </li>
               <li class="social-icons fb">
                 <a href="https://facebook.com" class="fb">
-                  <span class="visually-hidden">Nerds на Facebook</span>
+                <span class="visually-hidden">Nerds на Facebook</span>
                 </a>
               </li>
               <li class="social-icons inst">
                 <a href="https://instagram.com" class="inst">
-                  <span class="visually-hidden">Nerds в Instagram</span>
+                <span class="visually-hidden">Nerds в Instagram</span>
                 </a>
               </li>
             </ul>
-<!--ПРИЗЫВ-->
+            <!--ПРИЗЫВ-->
             <div class="friends">
               <p class="friends-topic">Давайте дружить, это выгодно!</p>
               <p class="friends-description">Скидка 10% для друзей из социальных сетей.</p>
             </div>
-          </div>             
+          </div>
         </div>
       </section>
     </footer>
-<!--СВЯЗАТЬСЯ-->
+    <!--СВЯЗАТЬСЯ-->
     <section class="modal-form display-none">
       <div class="container">
         <div class="modal">
@@ -249,10 +264,11 @@
               <textarea placeholder="В свободной форме" class="input-text"></textarea>
               </label>
             </div>
-             <button type="submit" class="modal-btn" value="Отправить">Отправить</button>
+            <button type="submit" class="modal-btn" value="Отправить">Отправить</button>
           </form>
         </div>
       </div>
     </section>
+    <script src="js/form-min.js"></script>
   </body>
 </html>
